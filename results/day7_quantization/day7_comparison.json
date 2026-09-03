@@ -1,0 +1,10 @@
+{
+  "model": "Qwen3-ASR-1.7B + QLoRA (merged) + int8 post-training quantization",
+  "overall_wer_pct": 7.22,
+  "entity_span_wer_pct": 21.39,
+  "finetuned_overall_wer_pct": 7.36,
+  "finetuned_entity_wer_pct": 22.99,
+  "overall_wer_change_pct_points": -0.14,
+  "entity_wer_change_pct_points": -1.6,
+  "completed_at_utc": "2026-09-02T09:35:18.860037+00:00"
+}

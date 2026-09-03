@@ -1,0 +1,12 @@
+{
+  "model": "Qwen3-ASR-1.7B + contextual biasing (zero training)",
+  "glossary_term_count": 62,
+  "glossary_source": "MD starter terms + train_manifest case_name/speaker_name",
+  "overall_wer_pct": 7.57,
+  "entity_span_wer_pct": 27.27,
+  "baseline_overall_wer_pct": 7.71,
+  "baseline_entity_wer_pct": 30.67,
+  "overall_wer_relative_improvement_pct": 1.77,
+  "entity_wer_relative_improvement_pct": 11.08,
+  "completed_at_utc": "2026-08-31T18:46:35.794776+00:00"
+}

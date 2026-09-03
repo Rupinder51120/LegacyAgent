@@ -1,0 +1,182 @@
+{
+  "project": "LegacyAgent V1",
+  "purpose": "Day 2 entity-span evaluation only",
+  "important_rule": "This vocabulary is an evaluation artifact. It must not automatically become the Day 3 bias glossary.",
+  "sources": [
+    "roadmap starter legal terms",
+    "frozen benchmark case metadata",
+    "frozen benchmark speaker metadata"
+  ],
+  "model_error_outputs_used": false,
+  "benchmark_segments": 1163,
+  "terms": [
+    {
+      "term": "Hernandez v. Mesa",
+      "category": "case_name",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "hernandez v mesa",
+      "reference_occurrences": 1
+    },
+    {
+      "term": "Wood v. Moss",
+      "category": "case_name",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "wood v moss",
+      "reference_occurrences": 1
+    },
+    {
+      "term": "certiorari",
+      "category": "legal_term",
+      "source": "roadmap_starter_list",
+      "normalized_term": "certiorari",
+      "reference_occurrences": 1
+    },
+    {
+      "term": "Alito",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "alito",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Boyd",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "boyd",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Breyer",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "breyer",
+      "reference_occurrences": 24
+    },
+    {
+      "term": "Clement",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "clement",
+      "reference_occurrences": 8
+    },
+    {
+      "term": "Garre",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "garre",
+      "reference_occurrences": 15
+    },
+    {
+      "term": "Gershengorn",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "gershengorn",
+      "reference_occurrences": 5
+    },
+    {
+      "term": "Ginsburg",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "ginsburg",
+      "reference_occurrences": 18
+    },
+    {
+      "term": "Hilliard",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "hilliard",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Kagan",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "kagan",
+      "reference_occurrences": 7
+    },
+    {
+      "term": "Kennedy",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "kennedy",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Kneedler",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "kneedler",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "O'Connor",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "oconnor",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Ortega",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "ortega",
+      "reference_occurrences": 2
+    },
+    {
+      "term": "Ray",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "ray",
+      "reference_occurrences": 12
+    },
+    {
+      "term": "Reinert",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "reinert",
+      "reference_occurrences": 2
+    },
+    {
+      "term": "Scalia",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "scalia",
+      "reference_occurrences": 21
+    },
+    {
+      "term": "Sotomayor",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "sotomayor",
+      "reference_occurrences": 4
+    },
+    {
+      "term": "Souter",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "souter",
+      "reference_occurrences": 8
+    },
+    {
+      "term": "Stevens",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "stevens",
+      "reference_occurrences": 1
+    },
+    {
+      "term": "Vladeck",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "vladeck",
+      "reference_occurrences": 2
+    },
+    {
+      "term": "Wilker",
+      "category": "speaker_surname",
+      "source": "frozen_benchmark_metadata",
+      "normalized_term": "wilker",
+      "reference_occurrences": 3
+    }
+  ]
+}

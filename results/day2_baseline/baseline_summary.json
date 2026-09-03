@@ -1,0 +1,120 @@
+{
+  "project": "LegacyAgent V1",
+  "stage": "Day 2 baseline evaluation",
+  "evaluation_protocol": {
+    "benchmark_file": "/content/drive/MyDrive/legacyagent/eval/frozen_test_benchmark.jsonl",
+    "evaluation_segments": 1163,
+    "frozen_test_cases": 5,
+    "benchmark_audio_hours": 4.63,
+    "minimum_duration_seconds": 3.0,
+    "maximum_duration_seconds": 30.0,
+    "needs_alignment": false,
+    "split_policy": "case-disjoint",
+    "metric": "corpus WER",
+    "normalization": "frozen Day 2 normalize_for_wer"
+  },
+  "models": {
+    "qwen3_asr_base": {
+      "model_id": "Qwen/Qwen3-ASR-1.7B-hf",
+      "prediction_file": "/content/drive/MyDrive/legacyagent/results/day2_baseline/qwen3_asr_base_predictions.jsonl",
+      "prediction_rows": 1163,
+      "integrity_audit": "passed",
+      "corpus_wer": 0.07713371935032087,
+      "corpus_wer_percent": 7.713371935032088,
+      "entity_token_error_rate": 0.3067484662576687,
+      "entity_token_error_rate_percent": 30.67484662576687,
+      "entity_substitutions": 30,
+      "entity_deletions": 20
+    },
+    "whisper_small": {
+      "model_id": "openai/whisper-small",
+      "prediction_file": "/content/drive/MyDrive/legacyagent/results/day2_baseline/whisper_small_predictions.jsonl",
+      "prediction_rows": 1163,
+      "integrity_audit": "passed",
+      "corpus_wer": 0.09851794560923097,
+      "corpus_wer_percent": 9.851794560923096,
+      "entity_token_error_rate": 0.3558282208588957,
+      "entity_token_error_rate_percent": 35.58282208588957,
+      "entity_substitutions": 35,
+      "entity_deletions": 23
+    }
+  },
+  "comparison": {
+    "qwen_case_wins": 5,
+    "total_test_cases": 5,
+    "absolute_wer_improvement_points": 2.1384226258910095,
+    "relative_error_reduction_percent": 21.70591979630808,
+    "entity_absolute_improvement_points": 4.907975460122699,
+    "entity_relative_error_reduction_percent": 13.79310344827586
+  },
+  "per_case_results": [
+    {
+      "case_id": "1996_96-318",
+      "case_name": "Richardson v. McKnight",
+      "segments": 220,
+      "qwen_wer": 0.08251875426233235,
+      "whisper_wer": 0.09013412139122527,
+      "winner": "Qwen"
+    },
+    {
+      "case_id": "2000_99-1977",
+      "case_name": "Saucier v. Katz",
+      "segments": 237,
+      "qwen_wer": 0.0618596936286467,
+      "whisper_wer": 0.07386086447458289,
+      "winner": "Qwen"
+    },
+    {
+      "case_id": "2008_07-1015",
+      "case_name": "Ashcroft v. Iqbal",
+      "segments": 244,
+      "qwen_wer": 0.09437559580552908,
+      "whisper_wer": 0.11267874165872259,
+      "winner": "Qwen"
+    },
+    {
+      "case_id": "2013_13-115",
+      "case_name": "Wood v. Moss",
+      "segments": 248,
+      "qwen_wer": 0.08954190165232018,
+      "whisper_wer": 0.1125952310280004,
+      "winner": "Qwen"
+    },
+    {
+      "case_id": "2016_15-118",
+      "case_name": "Hernandez v. Mesa",
+      "segments": 214,
+      "qwen_wer": 0.05308114704087859,
+      "whisper_wer": 0.10286760219646125,
+      "winner": "Qwen"
+    }
+  ],
+  "created_at_utc": "2026-07-06T05:46:15.704599+00:00",
+  "entity_evaluation": {
+    "metric_name": "Entity-Token Error Rate",
+    "metric_abbreviation": "ETER",
+    "entity_terms_file": "/content/drive/MyDrive/legacyagent/eval/entity_terms.json",
+    "frozen_entity_occurrences": 159,
+    "segments_with_entities": 142,
+    "reference_entity_words": 163,
+    "insertions_included": false,
+    "insertion_policy": "Excluded because inserted hypothesis words have no unique reference entity position.",
+    "vocabulary_limitations": {
+      "unique_terms": 24,
+      "speaker_surname_occurrences": 156,
+      "case_name_occurrences": 2,
+      "legal_term_occurrences": 1,
+      "note": "Targeted entity benchmark dominated by speaker surnames; not a comprehensive legal-jargon benchmark."
+    }
+  },
+  "day2_status": "FINAL_FROZEN_WITH_REPORTING_CLARIFICATION",
+  "completed_at_utc": "2026-07-06T06:10:29.208129+00:00",
+  "reporting_notes": {
+    "benchmark_scope": "Results apply to the frozen case-disjoint benchmark of 1,163 segments with durations from 3.0 to 30.0 seconds and needs_alignment=false; they are not results on complete raw hearings.",
+    "primary_wer_status": "Official frozen Day 2 metric. Number-format variants are not canonicalized beyond the frozen normalize_for_wer protocol.",
+    "entity_metric_scope": "ETER is measured on the frozen entity-token subset. The subset is dominated by speaker surnames and must not be described as a comprehensive legal-jargon benchmark.",
+    "entity_metric_interpretation": "Treat the approximately 5 percentage-point Qwen advantage as a directional signal on the frozen entity subset; report the underlying reference entity-word count alongside percentages.",
+    "test_set_governance": "The benchmark, entity vocabulary, normalization protocol, and cached predictions remain unchanged. No post-hoc test-set tuning was performed."
+  },
+  "reporting_clarification_added_at_utc": "2026-07-06T06:27:22.240875+00:00"
+}

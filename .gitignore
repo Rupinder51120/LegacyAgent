@@ -1,0 +1,12 @@
+data/
+raw_audio/
+checkpoints/
+*.wav
+*.mp3
+*.safetensors
+*.bin
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+*.broken_backup.jsonl
+*.old_broken_backup.jsonl

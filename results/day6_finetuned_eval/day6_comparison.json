@@ -1,0 +1,9 @@
+{
+  "model": "Qwen3-ASR-1.7B + QLoRA (qlora_v1_run2_eosfix/final_adapter)",
+  "overall_wer_pct": 7.36,
+  "entity_span_wer_pct": 22.99,
+  "baseline_overall_wer_pct": 7.71,
+  "baseline_entity_wer_pct": 30.67,
+  "overall_wer_relative_improvement_pct": 4.54,
+  "entity_wer_relative_improvement_pct": 25.03
+}

@@ -1,0 +1,17 @@
+{
+  "project": "LegacyAgent V1",
+  "stage": "Day 5 \u2014 QLoRA fine-tune",
+  "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
+  "lora_config": {
+    "r": 32,
+    "alpha": 64,
+    "dropout": 0.05,
+    "target_module_count": 112
+  },
+  "training_examples": 3613,
+  "validation_examples": 883,
+  "wps_ceiling_filter": 8.0,
+  "final_train_loss": 0.0650967675447464,
+  "adapter_path": "/content/drive/MyDrive/legacyagent/checkpoints/qlora_v1/final_adapter",
+  "completed_at_utc": "2026-08-10T11:30:03.750928+00:00"
+}
